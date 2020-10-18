@@ -1,3 +1,5 @@
+package.path = package.path .. ";C:/Projects/Complex/LuaTask/product_aggregator.lua"
+
 local items = {
     [0] = {
         name = "Product 1",
@@ -38,11 +40,9 @@ local items = {
     },
 }
 
-local ProductAggregator = require ("product_aggregator")
+local ProductAggregator = require 'product_aggregator'
 
---[[
-ProductAgregator:new(items)
---]]
+ProductAggregator:new(items)
 
 --[[
 print ("Sorted Products")
