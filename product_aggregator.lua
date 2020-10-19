@@ -20,7 +20,7 @@ end
 
 local function isProductValid(_product)
     for j, k in pairs(_product) do
-        if (j == 'name' and type(k) ~= 'string') or (j == 'price' and (type(k) ~= 'number' or k < 0)) then
+        if not (j == 'name' or j == 'price') or (j == 'name' and type(k) ~= 'string') or (j == 'price' and (type(k) ~= 'number' or k < 0)) then
             return false
         end
     end
