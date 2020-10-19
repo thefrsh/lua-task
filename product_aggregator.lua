@@ -47,8 +47,8 @@ end
 
 function product_aggregator:averagePrice()
     local sum = 0
-    for _, j in pairs(self.products) do
-        sum = sum + j.price
+    for _, k in pairs(self.products) do
+        sum = sum + k.price
     end
     return sum / #self.products
 end
