@@ -15,7 +15,7 @@ function product_aggregator:new(_items)
 
         local removeIfExistsWithLowerPrice = function (_product)
             for j, k in pairs(self.products) do
-                if k.name == _product.name and k.price < _product.price then
+                if k.name == _product.name and k.price <= _product.price then
                     table.remove(self.products, j)
                 end
             end
