@@ -1,5 +1,3 @@
-package.path = package.path .. ";C:/Projects/Complex/LuaTask/product_aggregator.lua"
-
 local items = {
     [0] = {
         name = "Product 1",
